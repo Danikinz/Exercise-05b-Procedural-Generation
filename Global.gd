@@ -1,5 +1,8 @@
 extends Node
 
+func _ready():
+	pause_mode = PAUSE_MODE_PROCESS
+
 func _unhandled_input(event):
 	if event.is_action_pressed("menu"):
 		#get_tree().quit()
